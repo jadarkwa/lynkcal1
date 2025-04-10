@@ -406,22 +406,6 @@ const Phase1Screen2Screen = props => {
             {'HOST CALENDAR'}
           </Text>
 
-          {/* Clear Availability Button */}
-          <Button
-            onPress={clearAvailability}
-            style={StyleSheet.applyWidth(
-              {
-                backgroundColor: 'rgb(211, 39, 148)',
-                marginTop: 10,
-                marginHorizontal: 140,
-                borderRadius: 10,
-                padding: 8
-              },
-              dimensions.width
-            )}
-            title="Clear"
-          />
-
           <View
             style={StyleSheet.applyWidth(
               {
@@ -680,6 +664,25 @@ const Phase1Screen2Screen = props => {
               />
             </Touchable>
           </View>
+
+        {/* Clear Availability Button */}
+        <Button
+            onPress={clearAvailability}
+            style={StyleSheet.applyWidth(
+              {
+                backgroundColor: 'rgb(211, 39, 148)',
+                marginTop: 0,
+                marginHorizontal: 140,
+                borderRadius: 10,
+                padding: 8,
+                marginBottom: 20,
+              },
+              dimensions.width
+            )}
+            title="Clear"
+          />
+
+
           {/* Weekly Availability Grid Section */}
           <View style={StyleSheet.applyWidth({ marginBottom: 50 }, dimensions.width)}>
             {/* Availability Grid */}
